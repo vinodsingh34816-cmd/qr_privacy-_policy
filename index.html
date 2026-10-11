@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Stitch QR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --primary-dark: #1557b0;
+      --surface: #ffffff;
+      --background: #f8f9fa;
+      --text-main: #202124;
+      --text-muted: #5f6368;
+      --border: #dadce0;
+      --card-bg: #ffffff;
+      --tag-bg: #e8f0fe;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--background);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 1px 3px rgba(60,64,67,0.1), 0 4px 12px rgba(60,64,67,0.05);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+      font-family: 'Google Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Google Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      font-family: 'Google Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-main);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #3c4043;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 18px;
+      color: #3c4043;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: #f1f3f4;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #3c4043;
+    }
+
+    .highlight-box strong {
+      color: var(--text-main);
+    }
+
+    .contact-card {
+      background: #e8f0fe;
+      border: 1px solid #d2e3fc;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 32px;
+    }
+
+    .contact-card h3 {
+      font-family: 'Google Sans', sans-serif;
+      color: var(--primary-dark);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">Privacy First Architecture</div>
+      <h1>Privacy Policy for Stitch QR</h1>
+      <div class="effective-date">Last Updated: October 11, 2026 • Version 2.0</div>
+    </header>
+
+    <div class="highlight-box">
+      <strong>Core Principle:</strong> Stitch QR is built with a zero-telemetry, offline-first philosophy. We do not collect, upload, share, or monetize any of your personal data or scanning history.
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>
+      This Privacy Policy applies to the <strong>Stitch QR</strong> Android application ("App", "we", "our"). We respect your privacy and are committed to protecting it. This document explains what device permissions the App requires and how data is handled.
+    </p>
+
+    <h2>2. Permissions and Data Usage</h2>
+    <p>Stitch QR requests only the minimum permissions necessary for its core functionalities:</p>
+    <ul>
+      <li>
+        <strong>Camera Permission (<code>android.permission.CAMERA</code>):</strong>
+        Required exclusively to detect and decode QR codes and barcodes in real-time. Camera frames are analyzed entirely on your device using on-device Google ML Kit Vision. The App never records, stores, or transmits video feeds or camera snapshots to external servers.
+      </li>
+      <li>
+        <strong>Photo Library / Media Access:</strong>
+        When you choose to scan a QR code from a saved picture, the App uses Android's zero-permission Photo Picker. Only the specific image you voluntarily select is decoded locally on your device.
+      </li>
+      <li>
+        <strong>Vibration Permission (<code>android.permission.VIBRATE</code>):</strong>
+        Used solely to provide brief haptic feedback when a code is recognized. No biometric or sensory data is collected.
+      </li>
+      <li>
+        <strong>Internet Permission (<code>android.permission.INTERNET</code>):</strong>
+        Used only when you explicitly tap to open a scanned web link in your default web browser, or when downloading standard web assets. The App itself does not transmit analytics or user data over the internet.
+      </li>
+    </ul>
+
+    <h2>3. Local Data Storage</h2>
+    <p>
+      All scan history, generated QR codes, and application preferences (such as vibration and auto-copy toggles) are stored strictly on your local device storage using an encrypted-compatible SQLite database (Android Room).
+    </p>
+    <ul>
+      <li>You have full control over this data at all times.</li>
+      <li>You can delete individual records or permanently clear all history via the History tab.</li>
+      <li>Uninstalling the App permanently deletes all locally saved data.</li>
+    </ul>
+
+    <h2>4. Third-Party Services and Analytics</h2>
+    <p>
+      Stitch QR does not incorporate third-party advertising networks, analytics tracking SDKs (such as Facebook SDK or Google Analytics for Firebase tracking), or behavioral profiling tools. Your usage remains completely private.
+    </p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>
+      Stitch QR does not knowingly collect or solicit any personally identifiable information from children under the age of 13. Because the App operates entirely locally without user registration, it complies with COPPA and global child privacy regulations.
+    </p>
+
+    <h2>6. Security</h2>
+    <p>
+      Because we do not store your data on cloud servers, your information is protected against remote data breaches. We follow Android security best practices, utilizing the secure Android Photo Picker and Sandboxed app storage.
+    </p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may occasionally update this Privacy Policy to reflect app updates or regulatory requirements. Any modifications will be reflected in the App with an updated "Last Updated" date.
+    </p>
+
+    <div class="contact-card">
+      <h3>8. Contact Us</h3>
+      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your privacy while using Stitch QR, please contact us at:</p>
+      <p>Email: <a href="mailto:vinodsingh34816@gmail.com">vinodsingh34816@gmail.com</a></p>
+    </div>
+
+    <footer>
+      &copy; 2026 Stitch QR. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
